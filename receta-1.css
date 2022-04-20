@@ -5,13 +5,12 @@
 body{
 	font-family: sans-serif; 
 	background-color: #D4E6F1;
-	/*padding-top: 30px;*/ /*para cabecera fija*/
 	position: relative;
 }
 /*rayas*/
 .raya{
 	  width: 1349px;
-	  height: 1700px; /*250 mas de la altura de la seccion 1*/
+	  height: 1700px; /*Restarle 43 para el Footer*/
 	  	  z-index: -5;
 	  position: absolute;
 	  background-color: #F2F4F4;
@@ -25,13 +24,9 @@ body{
 /*CABECERA*/
 header {
 	background-color: #154360;
-	box-shadow: 2px 2px 5px #999; /*Estructura: eje x,eje y,tamaño del desenfoque, border (aunque generlamente es cero y si no lo poner por defecto es cero),color*/
+	box-shadow: 2px 2px 5px #999;
 	font-size: 0px;
 	position: relative;
-	/*position: fixed;*//*para cabecera fija*/
-	/*padding-right: 989px;*//*para cabecera fija*/
-	/*margin: -30px;*/ /*para cabecera fija*/
-	/*margin-left: 0px;*//*para cabecera fija*/
 }
 
 header .logo{
@@ -79,7 +74,7 @@ header .nosotros{
 	display: inline;
 }
 
-header .fa-regular.fa-bowl-hot{ /*alinear*/
+header .fa-regular.fa-bowl-hot{
 	color: white;
 	float: right;
 	margin-top: 0px;
@@ -87,7 +82,7 @@ header .fa-regular.fa-bowl-hot{ /*alinear*/
 	display: inline;
 }
 
-header .fa-solid.fa-house{ /*alinear*/
+header .fa-solid.fa-house{
 	color: white;
 	float: right;
 	margin-top: 1px;
@@ -134,7 +129,7 @@ header .caja_inicio:hover,.caja_publicar:hover,.caja_nosotros:hover{
     /*SECCION 1*/
 article .contenedor{
 	background-color: white;
-	height: 1450px; /*mas 29 seccion2*/
+	height: 1450px; /*sumarle 29 para Seccion 2*/
 	width: 800px;
 	border-radius: 15px;
 	margin: 30px 50px;
@@ -193,7 +188,7 @@ article ul{
 	   list-style-type: square;
 }
 
-article .titulo_descripcion,.titulo_procedimiento{ /*titulo_ingredientes no esta*/
+article .titulo_descripcion,.titulo_procedimiento{
 	background-color:white; /*#D4E6F1+/;/*#F4C2C2;*//*color anterior*/
 	border-bottom: 5px solid #D4E6F1;
 	padding: 5px;
@@ -242,7 +237,7 @@ article .imagen_comida{
 
     /*SECCION 2*/
 article .seccion{
-	height: 1479px;
+	height: 1479px; /*Sumarle 181 para Raya*/
 	position: absolute;
 }
  article .menu{
